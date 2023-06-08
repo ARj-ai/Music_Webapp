@@ -29,11 +29,11 @@ function modelLoaded() {
     console.log('PoseNet Is Initialized');
 }
 
-function gotPoses(results){
+function got_poses(results){
    
  if(results.length > 0){
    console.log(results);
-   
+
    rightWristX = results[0].pose.rightWrist.x;
    rightWristY = results[0].pose.rightWrist.y;
    console.log("rightWristX = " + rightWristX +" rightWristY = "+ rightWristY);
